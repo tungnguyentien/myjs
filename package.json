@@ -1,0 +1,39 @@
+{
+  "name": "myjs",
+  "version": "1.0.0",
+  "description": "Common lib for client site",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run build && node ./node_modules/mocha/bin/mocha --recursive",
+    "build": "babel src/ -d lib/ && webpack"
+  },
+  "keywords": [
+    "myjs"
+  ],
+  "author": "Mr. Tung",
+  "license": "ISC",
+  "dependencies": {
+    "babel-preset-es2015": "^6.24.1",
+    "whatwg-fetch": "^3.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.0",
+    "@babel/preset-env": "^7.2.0",
+    "babel-eslint": "^7.2.2",
+    "babel-loader": "^8.0.4",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.4.0",
+    "babel-preset-stage-0": "^6.24.1",
+    "babel-register": "^6.24.1",
+    "bluebird": "^3.5.0",
+    "eslint": "^3.19.0",
+    "lodash.omit": "^4.5.0",
+    "nock": "^9.0.13",
+    "webpack": "^4.27.1",
+    "webpack-cli": "^3.1.2"
+  },
+  "directories": {
+    "lib": "lib"
+  }
+}
